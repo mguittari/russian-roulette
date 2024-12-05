@@ -1,0 +1,32 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+#button {
+  font-size: x-large;
+  font-weight: bold;
+  border: solid 2px black;
+  border-radius: 2rem;
+  margin: auto;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+p {
+  font-size: x-large;
+}
+
+#button:hover {
+  cursor: pointer;
+}
+
+#button:disabled {
+  cursor: not-allowed; /* Change le curseur */
+  opacity: 0.9; /* Rendre visuellement désactivé */
+}

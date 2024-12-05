@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <button id="button">Click</button>
+        <p>🤠🤠🤠 Clique sur le bouton pour jouer à la roulette russe 🤠🤠🤠</p>
+    </main>
+    <script>
+
+        let counter = 6;
+        let bulletIndex = Math.floor(Math.random() * counter);
+        const button = document.querySelector("#button");
+        const sentence = document.querySelector("p");
+
+        const pullTheTrigger = () => {
+            counter--;
+            const clic = counter === bulletIndex;
+            if (clic) {
+                console.log("💥")
+                console.log("You died");
+                button.disabled = true;
+                sentence.textContent = "💀💀💀💀💀💀💀💀💀"
+            } else {
+                console.log(`You live. ${counter} chances out of ${counter + 1} left.`);
+            }
+        }
+
+
+        button.addEventListener("click", pullTheTrigger);
+
+
+
+    </script>
+
+</body>
+
+</html>
