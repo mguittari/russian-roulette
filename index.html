@@ -4,42 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Russian Roulette Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header>Jeu de la roulette russe</header>
     <main>
+        <img src="assets/2027654.svg" alt="Pistolet vu de côté dessiné de façon réaliste">
+        <div id="barrel">
+            <span class="dot full"></span>
+            <span class="dot full"></span>
+            <span class="dot full"></span>
+            <span class="dot full"></span>
+            <span class="dot full"></span>
+            <span class="dot full"></span>
+        </div>
         <button id="button">Click</button>
-        <p>🤠🤠🤠 Clique sur le bouton pour jouer à la roulette russe 🤠🤠🤠</p>
+        <div id="text">
+            <p> Welcome to le jeu de la roulette russe. <br> Les règles sont simples : 1
+                pistolet, 1
+                barillet, 6 emplacements, 1 balle. <br> Tu tombes sur la balle tu meurs, tu tires dans le vide tu vis. 1
+                clique = 1 tir. <br> Clique pour appuyer et relâche pour tirer. </p>
+        </div>
     </main>
-    <script>
-
-        let counter = 6;
-        let bulletIndex = Math.floor(Math.random() * counter);
-        const button = document.querySelector("#button");
-        const sentence = document.querySelector("p");
-
-        const pullTheTrigger = () => {
-            counter--;
-            const clic = counter === bulletIndex;
-            if (clic) {
-                console.log("💥")
-                console.log("You died");
-                button.disabled = true;
-                sentence.textContent = "💀💀💀💀💀💀💀💀💀"
-            } else {
-                console.log(`You live. ${counter} chances out of ${counter + 1} left.`);
-            }
-        }
-
-
-        button.addEventListener("click", pullTheTrigger);
-
-
-
-    </script>
-
+    <footer>V1 - Matt Guittari</footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

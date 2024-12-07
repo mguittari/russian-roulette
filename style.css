@@ -1,32 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 main {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 10rem;
+  background-color: #faf482;
 }
 
-#button {
-  font-size: x-large;
+#barrel {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 2rem; /* Largeur */
+  height: 2rem; /* Hauteur identique pour un cercle */
+  border-radius: 50%; /* Arrondir pour former un cercle */
+}
+.full {
+  background-color: #494641; /* Couleur (par ex. style western) */
+}
+
+.empty {
+  background-color: #dad9cf;
+}
+
+.loaded {
+  background-color: #b36700;
+}
+
+#text,
+header,
+footer {
+  font-size: large;
+  text-align: center;
+}
+
+button {
+  font-size: 1.5rem;
   font-weight: bold;
-  border: solid 2px black;
-  border-radius: 2rem;
-  margin: auto;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-}
-
-p {
-  font-size: x-large;
-}
-
-#button:hover {
+  color: black;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background: orange;
+  box-shadow: 3px 3px black;
   cursor: pointer;
+  margin: 35px 0;
+}
+
+button:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
 }
 
 #button:disabled {
-  cursor: not-allowed; /* Change le curseur */
-  opacity: 0.9; /* Rendre visuellement désactivé */
+  cursor: not-allowed;
+  opacity: 0.6;
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+
+img {
+  width: 20rem;
+  height: auto;
+}
+
+footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
