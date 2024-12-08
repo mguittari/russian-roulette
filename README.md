@@ -8,7 +8,7 @@
 - Au clique du bouton, une nouvelle phrase apparait
 - Ronds remplis ou vides qui symbolisent l'état actuel du barillet et se mettent à jour à chaque clique
 - Le joueur clique jusqu'à "mourir" (il perd alors la partie)
-- "Vous êtes mort" s'affiche dans un style graphique Dark Souls
+- "TU ES MORT" s'affiche dans un style graphique Dark Souls
 - Bouton relancer le jeu
 - Responsive
 
@@ -21,6 +21,7 @@
 ### V3
 
 - À partir de 3 joueurs, après chaque mort le jeu continue jusqu'à ce qu'il n'en reste qu'un
+- Le bandeau "TU ES MORT" apparait en animation (fondu enchainé)
 
 ### V4
 
