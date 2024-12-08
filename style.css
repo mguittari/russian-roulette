@@ -120,16 +120,7 @@ blockquote > p {
   font-style: italic;
 }
 
-/* @media screen and (min-width: 768px) {
-  main {
-    gap: 2.5rem;
-  }
-  img {
-    width: 20rem;
-  }
-} */
-
-@media screen and (min-height: 950px) and (width >= 768px) {
+@media screen and (min-height: 1024px) {
   #title {
     font-size: 3rem;
   }
@@ -146,10 +137,12 @@ blockquote > p {
 
   button {
     font-size: 3rem;
+    box-shadow: 5px 5px black;
   }
   .dot {
     width: 3.5rem;
     height: 3.5rem;
+    border: 10px solid black;
   }
   blockquote > p {
     font-size: x-large;
