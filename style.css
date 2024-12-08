@@ -59,12 +59,12 @@ main {
 #text,
 header,
 footer {
-  font-size: large;
+  font-size: medium;
   text-align: center;
 }
 
 #text {
-  line-height: 2rem;
+  line-height: 1.7rem;
   padding: 0 2rem;
 }
 
