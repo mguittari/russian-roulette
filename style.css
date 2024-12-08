@@ -123,20 +123,18 @@ blockquote > p {
 .game-over {
   color: #b30000;
   background-color: black;
-  width: 100%;
   text-align: center;
   height: 5.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
-  opacity: 100%;
   font-family: "Cormorant Garamond";
 }
 
-/* .hidden {
-  display: none;
-} */
+.container-text {
+  width: 100%;
+}
 
 @media screen and (min-height: 1024px) {
   #title {

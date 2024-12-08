@@ -11,42 +11,29 @@ let bulletIndex = Math.floor(Math.random() * counter);
 const button = document.querySelector("#button");
 const text = document.querySelector("#text");
 const barrel = document.getElementsByClassName("dot");
-const endGame = document.getElementById("game-over");
 
 const pullTheTrigger = () => {
   counter--;
   const clic = counter === bulletIndex;
   if (clic) {
-    console.log("💥");
-    console.log("TU ÊTES MORT");
     barrel[counter].classList.add("loaded");
     button.disabled = true;
     text.removeAttribute("id");
     text.classList.add("game-over");
     text.innerHTML = "TU ES MORT";
   } else if (counter === 5) {
-    console.log(counter);
-    console.log(quotes[4]);
     barrel[5].classList.add("empty");
     text.innerHTML = quotes[4];
   } else if (counter === 4) {
-    console.log(counter);
-    console.log(quotes[3]);
     barrel[4].classList.add("empty");
     text.innerHTML = quotes[3];
   } else if (counter === 3) {
-    console.log(counter);
-    console.log(quotes[2]);
     barrel[3].classList.add("empty");
     text.innerHTML = quotes[2];
   } else if (counter === 2) {
-    console.log(counter);
-    console.log(quotes[1]);
     barrel[2].classList.add("empty");
     text.innerHTML = quotes[1];
   } else if (counter === 1) {
-    console.log(counter);
-    console.log(quotes[0]);
     barrel[1].classList.add("empty");
     text.innerHTML = quotes[0];
   }
