@@ -8,7 +8,6 @@
 - Au clique du bouton, une nouvelle phrase apparait
 - Ronds remplis ou vides qui symbolisent l'état actuel du barillet et se mettent à jour à chaque clique
 - Le joueur clique jusqu'à "mourir" (il perd alors la partie)
-- Un émoji explosion apparait pendant 1 fraction de seconde au moment de la mort
 - "Vous êtes mort" s'affiche dans un style graphique Dark Souls
 - Bouton relancer le jeu
 - Responsive
@@ -27,3 +26,4 @@
 
 - Choix entre plusieurs taille de barillet (6 - 7 - 8 - 9 chambres)
 - Possibilité de mettre plus d'une balle dans le barillet (max = capacité max du barillet - 1)
+- Ajout de sons pour une meilleure immersion
