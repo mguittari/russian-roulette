@@ -1,22 +1,25 @@
 # russian-roulette algo game
 
+![Image page d'accueil](/assets/Screen.png)
+
+V1 disponible ici : https://mguittari.github.io/russian-roulette/
+
 ### V1
 
 - 1 joueur (même s'il est techniquement possible de jouer à plusieurs)
 - Barillet à 6 chambres
 - 1 seule balle dans le barillet
-- Au clique du bouton, une nouvelle phrase apparait
-- Ronds remplis ou vides qui symbolisent l'état actuel du barillet et se mettent à jour à chaque clique
+- Au clique du bouton, une citation d'un philosophe apparaît
+- Points remplis ou vides qui symbolisent l'état actuel du barillet et se mettent à jour à chaque clique
 - Le joueur clique jusqu'à "mourir" (il perd alors la partie)
 - "TU ES MORT" s'affiche dans un style graphique Dark Souls
-- Bouton relancer le jeu
 - Responsive
 
 ### V2
 
 - 2 à 5 joueurs (choix)
 - Les joueurs sont invités à cliquer à tour de rôle
-- À la mort d'un joueur possibilité de relancer le jeu
+- Bouton relancer le jeu
 
 ### V3
 
@@ -27,4 +30,4 @@
 
 - Choix entre plusieurs taille de barillet (6 - 7 - 8 - 9 chambres)
 - Possibilité de mettre plus d'une balle dans le barillet (max = capacité max du barillet - 1)
-- Ajout de sons pour une meilleure immersion
+- Ajout de sons et bruitages pour une meilleure immersion
